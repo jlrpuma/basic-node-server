@@ -18,7 +18,7 @@ router.get('/status',  function (req, res) {
 });
 
 router.get('/',  function (req, res) {
-    res.send(data);
+    setTimeout(() => res.send(data) , 1000);
 });
 
 module.exports = router;
